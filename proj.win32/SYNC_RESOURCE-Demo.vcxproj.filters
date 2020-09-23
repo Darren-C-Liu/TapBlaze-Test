@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\Demo\proj.win32\CMakeFiles\f494e28de7ae1c0f46ca6852cfb72cf7\SYNC_RESOURCE-Demo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Demo\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\Demo\proj.win32\CMakeFiles\SYNC_RESOURCE-Demo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2A737BF1-9938-3B99-BD37-5D68C26D0F63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

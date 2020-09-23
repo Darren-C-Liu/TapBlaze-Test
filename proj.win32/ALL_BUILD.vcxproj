@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D9968473-9D87-3199-B140-EA6D4632307C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\Demo\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/dev/Demo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\dev\CMake\bin\cmake.exe -SC:/dev/Demo -BC:/dev/Demo/proj.win32 --check-stamp-file C:/dev/Demo/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\Demo\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/dev/Demo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\dev\CMake\bin\cmake.exe -SC:/dev/Demo -BC:/dev/Demo/proj.win32 --check-stamp-file C:/dev/Demo/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\Demo\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/dev/Demo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\dev\CMake\bin\cmake.exe -SC:/dev/Demo -BC:/dev/Demo/proj.win32 --check-stamp-file C:/dev/Demo/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\Demo\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/dev/Demo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\dev\CMake\bin\cmake.exe -SC:/dev/Demo -BC:/dev/Demo/proj.win32 --check-stamp-file C:/dev/Demo/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseArguments.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\dev\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;C:\dev\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\dev\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\dev\Demo\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\dev\Demo\proj.win32\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\Demo\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{D671F9D4-9097-3864-BF1E-898080BD57A7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\Demo.vcxproj">
+      <Project>{4A0405C0-4BE2-39A3-824A-3FBEA5607050}</Project>
+      <Name>Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\SYNC_RESOURCE-Demo.vcxproj">
+      <Project>{F5737D10-DB50-36D0-9632-F04E463D5B59}</Project>
+      <Name>SYNC_RESOURCE-Demo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{05AA3C9F-42D1-37D3-8179-B777E9A3B72E}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{A49C86CC-B8D4-387C-9E20-802942DDFF8A}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{1321EB69-369F-32C3-93F6-DAA125E6C672}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{21EC059A-2BE3-3B40-BE59-5AB1930EABF7}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{25DC3F70-A17F-3875-88C0-45DAEBEF9424}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{F9B3926C-AAC8-3B7D-84B9-68F19731F1B5}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{34C797DA-3D4E-3B50-8222-330F945825E8}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{C2BCED68-BD30-3E84-9FD8-9658FF3EF284}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{EBCC2E5F-36FD-365B-BB29-9895BE0E69E4}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{3A19F9B1-C8FD-3038-A575-7A314C0F23D5}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{EFC9658D-DDD2-36B6-AA47-FC099658BE12}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\Demo\proj.win32\engine\external\external.vcxproj">
+      <Project>{FA024CDD-4FE8-33D5-A04A-1C921FEDBBDF}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
